@@ -1,21 +1,29 @@
---find-links=https://girder.github.io/large_image_wheels GDAL
-# cartopy
+# Core Streamlit packages
+streamlit>=1.28.0
+streamlit-folium>=0.13.0
+
+# Core geospatial packages
 folium==0.13.0
-geemap[extra]
-geopandas
-jupyter-server-proxy
-keplergl
-leafmap
-localtileserver
-nbserverproxy
-owslib
-palettable
-plotly
-streamlit
-streamlit-bokeh-events
-streamlit-folium
-streamlit-keplergl
-tropycal
-# git+https://github.com/giswqs/leafmap
-# git+https://github.com/giswqs/geemap
+leafmap>=0.9.0
+geopandas>=0.12.0
+fiona>=1.8.0
+shapely>=1.8.0
+pyproj>=3.3.0
+
+# Earth Engine and advanced features
+geemap>=0.24.0
+
+# Visualization packages
+plotly>=5.0.0
+palettable>=3.3.0
+
+# Additional geospatial packages
+owslib>=0.27.0
+
+# Optional packages (commented out to avoid build issues in Streamlit Cloud)
+# jupyter-server-proxy
+# keplergl  # Requires PyArrow compilation, causes build failures
+# streamlit-keplergl  # Depends on keplergl
+# localtileserver  # May have build dependencies
+# tropycal  # May have additional dependencies
 
