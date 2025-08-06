@@ -12,6 +12,8 @@ pyproj>=3.3.0
 
 # Earth Engine and advanced features
 geemap>=0.24.0
+ipython>=7.0.0,<9.0.0
+ipywidgets>=7.6.0
 
 # Visualization packages
 plotly>=5.0.0
